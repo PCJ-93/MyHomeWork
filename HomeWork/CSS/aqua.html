@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .top {
+      height: 120px;
+      width: 100%;
+    }
+
+    .top-1 {
+      background-color: rgba(0, 0, 0, 0.041);
+      height: 40px;
+      border: 1px solid lightgray;
+    }
+
+    .top-in-cover {
+      margin: 0 auto;
+      position: relative;
+      display: flex;
+      justify-content: center;
+    }
+
+    .top-1-in {
+      padding: 0px 20px 4px 20px;
+      height: 40px;
+      float: left;
+      border-left: 1px solid lightgray;
+      text-align: center;
+      letter-spacing: -1px;
+      font-size: 13px;
+      font-weight: bold;
+      color: #636363;
+      align-content: center;
+    }
+
+    .top-in-cover a {
+      text-decoration: none;
+    }
+
+    .top-2 {
+      height: 80px;
+    }
+
+    .top-2-in {
+      width: 125px;
+      height: 80px;
+      text-align: center;
+      letter-spacing: -1px;
+      font-size: 14px;
+      font-weight: bold;
+      color: #353535;
+      align-content: center;
+    }
+
+    .top-2-in:hover {
+      background-color: rgb(231, 231, 12);
+    }
+
+    /*  윗부분  */
+
+    .main-container {
+      width: 100%;
+      background-image: url('../images/mcndbackground.jpg');
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .slide-img-box {
+      width: 1280px;
+      height: 330px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+
+    .panel {
+      width: 968px;
+      height: 408px;
+      text-align: center;
+    }
+
+    table, tr, td {
+      border-collapse: collapse;
+      border: 1px solid aqua;
+      padding: 10px;
+    }
+
+    .title-font {
+      font-size: 14px;
+    }
+    .word-font {
+      font-size: 12px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="top">
+    <div class="top-1">
+      <div class="top-in-cover">
+        <a href="http://www.naver.com" target="_blank">
+          <div class="top-1-in">롯데월드어드벤처</div>
+        </a>
+        <a href="http://www.naver.com" target="_blank">
+          <div class="top-1-in">롯데월드 어드벤처 부산</div>
+        </a>
+        <a href="http://www.naver.com" target="_blank">
+          <div class="top-1-in">SEOUL SKY</div>
+        </a>
+        <a href="http://www.naver.com" target="_blank">
+          <div class="top-1-in">롯데워터파크</div>
+        </a>
+        <a href="http://www.naver.com" target="_blank">
+          <div class="top-1-in">롯데월드 아쿠아리움 하노이</div>
+        </a>
+        <a href="http://www.naver.com" target="_blank">
+          <div class="top-1-in">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <select>
+              <option>Language</option>
+              <option>Korean</option>
+              <option>English</option>
+            </select>
+          </div>
+      </div>
+    </div>
+
+    <div class="top-2">
+      <div class="top-in-cover">
+        <a href="http://www.naver.com" target="_blank">
+          <div class="top-2-in" style="width: 139px;"><img src="../images/mcnd.jpg" width="139px;" height="80px;"></div>
+        </a>
+        <a href="http://www.naver.com" target="_blank">
+          <div class="top-2-in">아쿠아리움 소개</div>
+        </a>
+        <a href="http://www.naver.com" target="_blank">
+          <div class="top-2-in">프로그램 • 이벤트</div>
+        </a>
+        <a href="http://www.naver.com" target="_blank">
+          <div class="top-2-in">이용안내</div>
+        </a>
+        <a href="http://www.naver.com" target="_blank">
+          <div class="top-2-in">온라인예매</div>
+        </a>
+        <a href="http://www.naver.com" target="_blank">
+          <div class="top-2-in">단체 안내</div>
+        </a>
+        <a href="http://www.naver.com" target="_blank">
+          <div class="top-2-in">고객소리함</div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="main-container">
+    <div class="slide-img-box">
+      <div>
+        <a href="http://www.naver.com" target="_blank"><img src="../images/mcnd10.jpg" style="width: 968px;"
+            height="330px"></a>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-1">
+        <table>
+          <tr>
+            <td colspan="3">아쿠아리움 365</td>
+            <td colspan="3">주요 프로그램</td>
+          </tr>
+          <tr>
+            <td colspan="3">아쿠아리움 운영시간<br>10:00~22:00</td>
+            <td rowspan="4"><img src="../images/mcndround.jpg"><br><span class="title-font">먹이 주는 시간</span><br><span class="word-font"> 생명을 존중하고 함께하는 방법을<br>생각합니다.</span></td>
+            <td rowspan="4"><img src="../images/mcndround.jpg"><br><span class="title-font">신나는 이벤트</span><br><span class="word-font">롯데월드 아쿠아리움에서 진행하는 이벤<br>트를 소개합니다.</span></td>
+            <td rowspan="4"><img src="../images/mcndround.jpg"><br><span class="title-font">교육•단체 프로그램</span><br><span class="word-font">아쿠아리움에서 놀면서 배우는 체험교육<br>이야기</span></td>
+          </tr>
+          <tr>
+            <td>이용요금</td>
+            <td>우대정보</td>
+            <td>DIY 활동지</td>
+          </tr>
+          <tr>
+            <td>층별안내</td>
+            <td>단체프로그램</td>
+            <td>고객의 소리</td>
+          </tr>
+          <tr>
+            <td>교통•주차</td>
+            <td>편의시설</td>
+            <td>장애인<br>편의제도</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+
+
+  </div>
+
+
+</body>
+
+</html>
