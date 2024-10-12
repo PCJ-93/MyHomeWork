@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .top {
+      height: 120px;
+      width: 100%;
+    }
+
+    .top-1 {
+      background-color: rgba(0, 0, 0, 0.041);
+      height: 40px;
+      border: 1px solid lightgray;
+    }
+
+    .top-in-cover {
+      margin: 0 auto;
+      position: relative;
+      display: flex;
+      justify-content: center;
+    }
+
+    .top-1-in {
+      padding: 0px 20px 4px 20px;
+      height: 40px;
+      float: left;
+      border-left: 1px solid lightgray;
+      text-align: center;
+      letter-spacing: -1px;
+      font-size: 13px;
+      font-weight: bold;
+      color: #636363;
+      align-content: center;
+    }
+
+    .top-in-cover a {
+      text-decoration: none;
+    }
+
+    .top-2 {
+      height: 80px;
+    }
+
+    .top-2-in {
+      width: 125px;
+      height: 80px;
+      text-align: center;
+      letter-spacing: -1px;
+      font-size: 14px;
+      font-weight: bold;
+      color: #353535;
+      align-content: center;
+    }
+
+    .top-2-in:hover {
+      background-color: rgb(231, 231, 12);
+    }
+
+    /*  윗부분  */
+
+    .main-container {
+      width: 100%;
+      background-image: url('../images/background01.jpg');
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .slide-img-box {
+      width: 1280px;
+      height: 330px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+
+    .panel {
+      width: 968px;
+      height: 408px;
+      text-align: center;
+    }
+
+    table,
+    tr,
+    td {
+      border-collapse: collapse;
+      border: 1px solid rgb(141, 55, 16);
+      color: white;
+      font-size: 12px;
+      padding: 25px 10px 25px 10px;
+    }
+
+    .title-font {
+      font-size: 14px;
+    }
+
+    .word-font {
+      font-size: 12px;
+    }
+
+    .middle-cont {
+      margin: 0px;
+      width: 968px;
+      height: 900px;
+    }
+
+    .middle-title {
+      width: 100%;
+      height: 15%;
+      text-align: center;
+      color: rgb(231, 231, 12);
+      padding: 20px;
+    }
+
+    .box-mid {
+      height: 55%;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      color: rgb(231, 231, 12);
+    }
+
+    .middle-cont-box span {
+      font-size: 13px;
+      color: white;
+    }
+
+    .middle-cont-box button {
+      width: 100px;
+      height: 40px;
+      background-color: #00000000;
+      color: white;
+      border: 2px solid white;
+    }
+
+    .foot {
+      height: 30%;
+      padding: 5px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .foot-row {
+      background-color: white;
+      width: 24.7%;
+      height: 100%;
+      font-size: 14px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+
+    .foot-col {
+      border-top: 1px solid gray;
+      padding-left: 10px;
+      height: 25%;
+      text-align: left;
+      display: flex;
+      align-items: center;
+    }
+
+    .img-size {
+      width: 120px;
+    }
+
+    .foot-row:nth-child(2),
+    .foot-row:nth-child(3) {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+
+    .foot-col2 {
+      border-top: 1px solid gray;
+      padding: 0px 20px 0px 10px;
+      height: 50%;
+      text-align: left;
+      display: flex;
+      align-items: center;
+    }
+
+    .foot-row .foot-col2 {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .fixed-chat-button {
+      background-color: rgb(231, 231, 12);
+      border: 2px solid black;
+      width: 100px;
+      height: 50px;
+      position: absolute;
+      position: fixed;
+      right: 50px;
+      bottom: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: black;
+    }
+
+    table tr td a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .middle-cont-box a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .foot a {
+      color: #353535;
+      text-decoration: none;
+    }
+
+  </style>
+
+</head>
+
+<body>
+  <div class="top">
+    <div class="top-1">
+      <div class="top-in-cover">
+        <a href="http://www.naver.com" target="_blank">
+          <div class="top-1-in">롯데월드어드벤처</div>
+        </a>
+        <a href="http://www.naver.com" target="_blank">
+          <div class="top-1-in">롯데월드 어드벤처 부산</div>
+        </a>
+        <a href="http://www.naver.com" target="_blank">
+          <div class="top-1-in">SEOUL SKY</div>
+        </a>
+        <a href="http://www.naver.com" target="_blank">
+          <div class="top-1-in">롯데워터파크</div>
+        </a>
+        <a href="http://www.naver.com" target="_blank">
+          <div class="top-1-in">롯데월드 아쿠아리움 하노이</div>
+        </a>
+          <div class="top-1-in">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <select>
+              <option>Language</option>
+              <option>Korean</option>
+              <option>English</option>
+            </select>
+          </div>
+      </div>
+    </div>
+
+    <div class="top-2">
+      <div class="top-in-cover">
+        <a href="http://www.naver.com" target="_blank">
+          <div class="top-2-in" style="width: 139px;"><img src="../images/mcnd.jpg" width="139px;" height="80px;"></div>
+        </a>
+        <a href="http://www.naver.com" target="_blank">
+          <div class="top-2-in">아쿠아리움 소개</div>
+        </a>
+        <a href="http://www.naver.com" target="_blank">
+          <div class="top-2-in">프로그램 • 이벤트</div>
+        </a>
+        <a href="http://www.naver.com" target="_blank">
+          <div class="top-2-in">이용안내</div>
+        </a>
+        <a href="http://www.naver.com" target="_blank">
+          <div class="top-2-in">온라인예매</div>
+        </a>
+        <a href="http://www.naver.com" target="_blank">
+          <div class="top-2-in">단체 안내</div>
+        </a>
+        <a href="http://www.naver.com" target="_blank">
+          <div class="top-2-in">고객소리함</div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="main-container">
+    <div class="slide-img-box">
+      <div>
+        <a href="http://www.naver.com" target="_blank"><img src="../images/mcnd10.jpg" style="width: 968px;"
+            height="330px"></a>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-1">
+        <table>
+          <tr>
+            <td colspan="3"><a href="https://www.naver.com" target="_blank">아쿠아리움 365</a></td>
+            <td colspan="3">주요 프로그램</td>
+          </tr>
+          <tr>
+            <td colspan="3"><a href="https://www.naver.com" target="_blank">아쿠아리움 운영시간<br>10:00~22:00</a></td>
+            <td rowspan="4"><a href="https://www.naver.com" target="_blank"><img src="../images/mcndround.jpg"><br><span class="title-font">먹이 주는 시간</span><br><span
+                class="word-font"> 생명을 존중하고 함께하는 방법을<br>생각합니다.</span></a></td>
+            <td rowspan="4"><a href="https://www.naver.com" target="_blank"><img src="../images/mcndround.jpg"><br><span class="title-font">신나는 이벤트</span><br><span
+                class="word-font">롯데월드 아쿠아리움에서 진행하는 이벤<br>트를 소개합니다.</span></a></td>
+            <td rowspan="4"><a href="https://www.naver.com" target="_blank"><img src="../images/mcndround.jpg"><br><span class="title-font">교육•단체 프로그램</span><br><span
+                class="word-font">아쿠아리움에서 놀면서 배우는 체험교육<br>이야기</span></a></td>
+          </tr>
+          <tr>
+            <td><a href="https://www.naver.com" target="_blank">이용요금</a></td>
+            <td><a href="https://www.naver.com" target="_blank">우대정보</a></td>
+            <td><a href="https://www.naver.com" target="_blank">DIY 활동지</a></td>
+          </tr>
+          <tr>
+            <td><a href="https://www.naver.com" target="_blank">층별안내</a></td>
+            <td><a href="https://www.naver.com" target="_blank">단체프로그램</a></td>
+            <td><a href="https://www.naver.com" target="_blank">고객의 소리</a></td>
+          </tr>
+          <tr>
+            <td><a href="https://www.naver.com" target="_blank">교통•주차</a></td>
+            <td><a href="https://www.naver.com" target="_blank">편의시설</a></td>
+            <td><a href="https://www.naver.com" target="_blank">장애인<br>편의제도</a></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="middle-cont">
+      <div class="middle-title">
+        <h1>AQUARIUM NOW</h1><br><span style="font-size: 15px;">알수록 신비롭고 재미있는 아쿠아리움의 생생한 이야기를 들려드립니다.</span>
+      </div>
+      <div class="box-mid">
+        <div class="middle-cont-box"><img src="../images/berg.jpg" style="height: 280px;"><br><br>
+          <h4>아쿠아리스트가 궁금해요!</h4><span><br>톡톡 터지는 아쿠아리스트의<br>특별한 이야기</span><br><br><button type="button"><a href="https://www.naver.com" target="_blank">자세히 보기</a></button>
+        </div>
+        <div class="middle-cont-box"><img src="../images/berg.jpg" style="height: 280px;"><br><br>
+          <h4>바다 친구들의 수다</h4><span><br>재잘재잘 바다친구들의<br>알고 싶은 이야기</span><br><br><button type="button"><a href="https://www.naver.com" target="_blank">자세히 보기</a></button>
+        </div>
+        <div class="middle-cont-box"><img src="../images/berg.jpg" style="height: 280px;"><br><br>
+          <h4>반갑다 친구야</h4><span><br>안녕~안녕~<br>궁금한 바다친구들을 만나보세요!</span><br><br><button type="button"><a href="https://www.naver.com" target="_blank">자세히 보기</a></button>
+        </div>
+      </div>
+
+      <div class="foot">
+        <div class="foot-row">
+          <div class="foot-col"><a href="https://www.naver.com" target="_blank" style="font-weight: bold;">공지사항</a></div>
+          <div class="foot-col"><a href="https://www.naver.com" target="_blank">[공지]하노이 아쿠아리움 입장권</a></div>
+          <div class="foot-col"><a href="https://www.naver.com" target="_blank">[공지]개인정보처리방침 변경 안내</a></div>
+          <div class="foot-col"><a href="https://www.naver.com" target="_blank">[공지]벨루가 소식</a></div>
+        </div>
+        <div class="foot-row">
+          <a href="https://www.naver.com" target="_blank" style="font-weight: bold;">인스타그램</a><br>
+          <a href="https://www.naver.com" target="_blank"><img src="../images/mcndround.jpg" class="img-size"></a><br><a href="https://www.naver.com" target="_blank">공식 인스타그램 보러가기</a>
+        </div>
+        <div class="foot-row">
+          <a href="https://www.naver.com" target="_blank" style="font-weight: bold;">페이스북</a><br>
+          <a href="https://www.naver.com" target="_blank"><img src="../images/mcndround.jpg" class="img-size"></a><br><a href="https://www.naver.com" target="_blank">공식 페이스북 보러가기</a>
+        </div>
+        <div class="foot-row">
+          <div class="foot-col2"><a href="https://www.naver.com" target="_blank" style="font-weight: bold;">아쿠아리움<br>우대정보</a> <a href="https://www.naver.com" target="_blank"><img src="../images/mcndround.jpg" style="width: 100px;"></a></div>
+          <div class="foot-col2"><a href="https://www.naver.com" target="_blank" style="font-weight: bold;">아쿠아리움<br>기념상품</a> <a href="https://www.naver.com" target="_blank"><img src="../images/mcndround.jpg" style="width: 100px;"></a></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <a href="https://www.naver.com" target="_blank"><div class="fixed-chat-button"> <h3>채팅상담</h3> </div></a>
+
+</body>
+
+</html>
